@@ -22,14 +22,14 @@ except Exception as e:
 sys_tz = list(time.tzname)[0]
 
 #http://stackoverflow.com/questions/27616778/case-insensitive-argparse-choices
-class mylist(list):
- def __contains__(self,other):
-   return super(mylist,self).__contains__(other.upper())
+#class mylist(list):
+# def __contains__(self,other):
+#   return super(mylist,self).__contains__(other.upper())
 
-choices=mylist(['UTC',sys_tz])
-p = argparse.ArgumentParser(usage='convert_time.py [-h] -z [UTC|CDT] -d 22/Sep/15 03:05 PM')
-p.add_argument('--date','-d',dest='date',action='store',nargs='?')
-p.add_argument('--zone','-z',dest='zone',action='store',choices=choices, default=sys_tz) #,required=True)
+#choices=mylist(['UTC',sys_tz])
+#p = argparse.ArgumentParser(usage='convert_time.py [-h] -z [UTC|CDT] -d 22/Sep/15 03:05 PM')
+#p.add_argument('--date','-d',dest='date',action='store',nargs='?')
+#p.add_argument('--zone','-z',dest='zone',action='store',choices=choices, default=sys_tz) #,required=True)
 
 
 
