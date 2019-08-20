@@ -47,7 +47,7 @@ to_zone = tz.tzlocal()
 
 
 class Convert_time(object):
-  def __init__(self,user_input=default_date,user_input_true=0,user_input_to_secs=0,utc_date_secs=0,local_date_secs=0,im_start_secs=0,im_restored_secs=0,utc_to_local=datetime_obj,utc_to_local_system=datetime_obj,time_zone=None):
+  def __init__(self,user_input=default_date,user_input_true=0,user_input_to_secs=0,utc_date_secs=0,local_date_secs=0,im_start_secs=0,im_restored_secs=0,utc_to_local=datetime_obj,utc_to_local_system=datetime_obj,time_zone=sys_tz):
    self.__user_input = user_input
    self.__user_input_true = user_input_true
    self.__user_input_to_secs = user_input_to_secs
